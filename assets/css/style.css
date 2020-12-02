@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -29,12 +33,18 @@ header h1 {
 .menu {
   background-color: rgba(7, 7, 105, 0.746);
   position: fixed;
-  width: 85%;
+  width: 85vw;
   height: 100vh;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease;
+  transform: translate(-100%, 0);
+}
+
+.menu.is-active {
+  transform: translate(0, 0);
 }
 
 .menu ul {
@@ -49,11 +59,13 @@ header h1 {
   padding: 2rem 0;
   width: 100%;
   text-align: center;
+  transition: all 0.3s ease;
 }
 .menu ul li a {
   color: #f3c23b;
   text-decoration: none;
   width: 100%;
+  transition: all 0.3s ease;
 }
 
 .menu ul li:hover {
@@ -63,12 +75,12 @@ header h1 {
   color: #070769;
 }
 
-h2 {
-  margin-left: 3rem;
+.seccion {
+  height: 100vh;
+  padding: 2rem;
 }
-
-.d-none {
-  display: none;
+.seccion h2 {
+  margin-top: 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

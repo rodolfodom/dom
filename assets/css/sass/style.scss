@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -29,12 +33,18 @@ header {
 .menu {
   background-color: rgba(7, 7, 105, 0.746);
   position: fixed;
-  width: 85%;
+  width: 85vw;
   height: 100vh;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease;
+  transform: translate(-100%, 0);
+}
+
+.menu.is-active {
+  transform: translate(0, 0);
 }
 
 .menu ul {
@@ -48,10 +58,12 @@ header {
     padding: 2rem 0;
     width: 100%;
     text-align: center;
+    transition: all 0.3s ease;
     a {
       color: #f3c23b;
       text-decoration: none;
       width: 100%;
+      transition: all 0.3s ease;
     }
   }
 }
@@ -63,10 +75,10 @@ header {
   }
 }
 
-h2 {
-  margin-left: 3rem;
-}
-
-.d-none {
-  display: none;
+.seccion {
+  height: 100vh;
+  padding: 2rem;
+  h2 {
+    margin-top: 6rem;
+  }
 }
