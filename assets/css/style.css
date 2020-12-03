@@ -81,6 +81,67 @@ header h1 {
 }
 .seccion h2 {
   margin-top: 6rem;
+  text-align: center;
+  font-size: 40px;
+}
+
+.funcionesReloj {
+  display: flex;
+  justify-content: center;
+}
+.funcionesReloj button {
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.funcionesReloj button:nth-child(even) {
+  margin-right: 2rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #e64037;
+}
+
+.funcionesReloj button:nth-child(odd) {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #356ae6;
+}
+
+.funcionesReloj button:hover:nth-child(even) {
+  box-shadow: 1px 4px 9px 0px black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.funcionesReloj button:hover:nth-child(odd) {
+  cursor: pointer;
+  box-shadow: 1px 4px 9px 0px black;
+  transition: all 0.3s;
+}
+
+.funcionesReloj button:disabled:nth-child(even) {
+  box-shadow: none;
+  cursor: default;
+  background-color: #db6963;
+  transition: all 0.3s;
+}
+
+.funcionesReloj button:disabled:nth-child(odd) {
+  background-color: #6185db;
+  cursor: default;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+#reloj {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 0;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

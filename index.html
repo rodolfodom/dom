@@ -22,7 +22,7 @@
     <div class="menu">
         <ul>
             <li>
-                <a href="#seccion1">Sección 1</a>
+                <a href="#seccion1">Alarma y reloj</a>
             </li>
             <li>
                 <a href="#seccion2">Sección 2</a>
@@ -42,7 +42,17 @@
         </ul>
     </div>
     <section class="seccion" id="seccion1">
-        <h2>Sección 1</h2>
+        <h2>Alarma y reloj</h2>
+        <p id="reloj">
+            01:25
+        </p>
+        <section class="funcionesReloj">
+            <button id="activarR">Activar reloj</button>
+            <button id="desactivarR" disabled>Desactivar reloj</button>
+            <button id="activarA">Iniciar alarma</button>
+            <button id="desactivarA" disabled>Desactivar alarma</button>
+            <audio id="alarma" loop src="./assets/Cartoon - Howling (Ft. Asena) [NCS Release].mp3"></audio>
+        </section>
     </section>
     <section class="seccion" id="seccion2">
         <h2>Sección 2</h2>
@@ -60,7 +70,8 @@
         <h2>Sección 6</h2>
     </section>
     <script type="module" src="/assets/scripts/main.js"></script>
-    <script typer="module" src="/assets/scripts/modules/burgerMenu.js"></script>
+    <script type="module" src="/assets/scripts/modules/burgerMenu.js"></script>
+    <script type="module" src="/assets/scripts/modules/relojAl.js"></script>
 
 </body>
 
