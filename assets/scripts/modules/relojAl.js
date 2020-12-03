@@ -1,12 +1,13 @@
 
 export function activarReloj(btnAR, btnDR, reloj) {
     const d = document;
+    let intervalo;
     d.addEventListener("click", (e)=>{
         if(e.target.matches(btnAR)){
-            setInterval(() => {
+            intervalo = setInterval(() => {
                  let fecha = new Date();
-                 let tiempo = fecha.toLocaleTimeString();   
-                 d.querySelector(reloj).textContent = tiempo;
+                 let tiempo = fecha.toLocaleTimeString();
+                 d.querySelector(reloj).textContent = tiempo;   
             }, 1000); 
             d.querySelector(btnAR).disabled = true;
             d.querySelector(btnDR).disabled = false;
@@ -14,10 +15,11 @@ export function activarReloj(btnAR, btnDR, reloj) {
             d.querySelector(reloj).style.display = "block";
         };
         if(e.target.matches(btnDR)){
-            d.querySelector(reloj).style.display = "none";
-            d.querySelector(reloj).textContent = "#######";
+            clearInterval(intervalo);
+            d.querySelector(reloj).textContent = null;
             d.querySelector(btnAR).disabled = false;
             d.querySelector(btnDR).disabled = true;
+            
         };
     });
 };
