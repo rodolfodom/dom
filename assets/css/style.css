@@ -144,4 +144,20 @@ header h1 {
   display: none;
 }
 
+.tablero {
+  width: 70%;
+  height: 80%;
+  margin: 2rem auto;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tablero figure {
+  width: 80px;
+  height: 80px;
+  background-color: #356ae6;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */

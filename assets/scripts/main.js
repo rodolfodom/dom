@@ -1,5 +1,6 @@
 import hamburguerMenuActive from "./modules/burgerMenu.js";
 import { activarReloj, alarma } from "./modules/relojAl.js";
+import {shortCuts} from "./modules/keyboardEvents.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e)=>{
@@ -9,4 +10,6 @@ d.addEventListener("DOMContentLoaded", (e)=>{
 });
 
 
-
+d.addEventListener("keydown", (e)=>{
+    shortCuts(e);
+});
