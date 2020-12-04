@@ -10,6 +10,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{
     hamburguerMenuActive(".hamburger", ".menu", "is-active", ".menu a");
     activarReloj("#activarR", "#desactivarR", "#reloj");
     alarma("#activarA", "#desactivarA", "#alarma");
+    coundown(fechaL, "#countdown", "Es hoy, es hoy");
 });
 
 
@@ -19,6 +20,6 @@ d.addEventListener("keydown", (e)=>{
     moveBall(e, "#bolita", ".tablero");
 });
 
-coundown(fechaL, "#countdown", "Es hoy, es hoy");
+
 
 

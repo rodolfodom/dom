@@ -8,10 +8,10 @@ export function coundown(fecha, selector, mensaje) {
             horas = Math.floor((diferencia % 86400000) / 3600000),
             minutos = Math.floor(((diferencia % 86400000) % 3600000) / 60000),
             segundos = Math.floor((((diferencia % 86400000) % 3600000) % 60000) / 1000);
-            $reloj.textContent = `${dias.toString().padStart(2,"0")} días ${horas.toString().padStart(2,"0")} horas ${minutos.toString().padStart(2,"0")} minutos ${segundos.toString().padStart(2,"0")} segundos`;
+            $reloj.textContent = `Faltan: ${dias.toString().padStart(2,"0")} días ${horas.toString().padStart(2,"0")} horas ${minutos.toString().padStart(2,"0")} minutos ${segundos.toString().padStart(2,"0")} segundos`;
         }else{
             $reloj.textContent = mensaje;
-            clearInterval(mensaje);
+            clearInterval(intervalo);
         };
         }, 1000);
 };   
