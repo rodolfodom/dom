@@ -1,8 +1,10 @@
 import hamburguerMenuActive from "./modules/burgerMenu.js";
 import { activarReloj, alarma } from "./modules/relojAl.js";
 import {shortCuts, moveBall} from "./modules/keyboardEvents.js";
-const d = document;
+import { coundown } from "./modules/countdown.js";
 
+const d = document,
+fechaL = new Date(2020, 11, 5, 20, 11, 0);
 
 d.addEventListener("DOMContentLoaded", (e)=>{
     hamburguerMenuActive(".hamburger", ".menu", "is-active", ".menu a");
@@ -16,4 +18,7 @@ d.addEventListener("keydown", (e)=>{
     shortCuts(e);
     moveBall(e, "#bolita", ".tablero");
 });
+
+coundown(fechaL, "#countdown", "Es hoy, es hoy");
+
 
