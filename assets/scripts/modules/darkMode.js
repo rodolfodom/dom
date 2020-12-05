@@ -10,6 +10,6 @@ export function darkMode(btn) {
             $icon.classList.toggle("fa-sun");
             $body.classList.toggle("darkMode");
         }
-    })
-}
+    });
+};
 
