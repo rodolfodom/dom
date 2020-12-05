@@ -159,13 +159,29 @@ header h1 {
   background-color: #f3c23b;
   border-radius: 50%;
   transform: translate(0, 0);
-  transition: all 0.1s ease;
+  transition: all 0.01ms ease;
 }
 
 .countdown {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
+}
+
+.upBtn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem 1.2rem;
+  font-size: 30px;
+  background-color: #f3c23b;
+  color: #070769;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */
