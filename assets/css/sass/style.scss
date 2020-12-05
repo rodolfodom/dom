@@ -1,3 +1,5 @@
+$colorL: #f3c23b;
+$colorD: rgb(7, 7, 105);
 html {
   scroll-behavior: smooth;
 }
@@ -191,4 +193,30 @@ header {
 .upBtn:hover {
   color: #f3c23b;
   background-color: rgb(7, 7, 105);
+}
+
+.darkBtn {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 1rem 1.2rem;
+  font-size: 30px;
+  background-color: #f3c23b;
+  color: rgb(7, 7, 105);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.darkBtn:hover {
+  color: #f3c23b;
+  background-color: rgb(7, 7, 105);
+}
+
+.darkMode {
+  background-color: $colorD;
+  color: $colorL;
 }

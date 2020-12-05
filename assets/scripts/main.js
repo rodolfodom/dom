@@ -3,6 +3,7 @@ import { activarReloj, alarma } from "./modules/relojAl.js";
 import {shortCuts, moveBall} from "./modules/keyboardEvents.js";
 import { coundown } from "./modules/countdown.js";
 import { btnUp } from "./modules/buttonUp.js";
+import { darkMode } from "./modules/darkMode.js";
 
 
 const d = document,
@@ -14,6 +15,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{
     alarma("#activarA", "#desactivarA", "#alarma");
     coundown(fechaL, "#countdown", "Es hoy, es hoy");
     btnUp(".upBtn");
+    darkMode(".darkBtn");
 });
 
 

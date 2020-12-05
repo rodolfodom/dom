@@ -194,4 +194,30 @@ header h1 {
   background-color: #070769;
 }
 
+.darkBtn {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 1rem 1.2rem;
+  font-size: 30px;
+  background-color: #f3c23b;
+  color: #070769;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.darkBtn:hover {
+  color: #f3c23b;
+  background-color: #070769;
+}
+
+.darkMode {
+  background-color: #070769;
+  color: #f3c23b;
+}
+
 /*# sourceMappingURL=style.css.map */
