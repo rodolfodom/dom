@@ -13,7 +13,7 @@ export function btnUp(btn){
     });
 
     d.addEventListener("click", (e)=>{
-        if(e.target.matches(btn)){
+        if(e.target.matches(btn) || e.target.matches(`${btn} *`)){
             scrollTo({
                 behavior:"smooth",
                 top: 0,
