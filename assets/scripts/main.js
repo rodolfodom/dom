@@ -5,9 +5,11 @@ import { coundown } from "./modules/countdown.js";
 import { btnUp } from "./modules/buttonUp.js";
 import { darkMode } from "./modules/darkMode.js";
 import { ModeStorage, setValStorage } from "./modules/storage.js";
+import { videosRespLoad } from "./modules/resposive.js";
 
 
 const d = document,
+w = window,
 fechaL = new Date(2020, 11, 5, 20, 11, 0);
 
 
@@ -25,5 +27,13 @@ d.addEventListener("DOMContentLoaded", (e)=>{;
 d.addEventListener("keydown", (e)=>{
     shortCuts(e);
     moveBall(e, "#bolita", ".tablero"); 
+});
+
+w.addEventListener("load", () => {
+    videosRespLoad("#embebido");
+});
+
+w.addEventListener("resize", () => {
+    videosRespLoad("#embebido");
 });
 

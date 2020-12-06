@@ -220,3 +220,21 @@ header {
   background-color: $colorD;
   color: $colorL;
 }
+
+@media (min-width: 960px) {
+  #embebido {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 960px) {
+  #embebido {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    a {
+      text-align: center;
+    }
+  }
+}
