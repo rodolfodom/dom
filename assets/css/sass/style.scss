@@ -79,7 +79,7 @@ header {
 }
 
 .seccion {
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem;
   h2 {
     margin-top: 6rem;
@@ -150,7 +150,7 @@ header {
 .tablero {
   display: flex;
   width: 70%;
-  height: 80%;
+  height: 70vh;
   margin: 2rem auto;
   background-color: rgb(3, 3, 56);
   div {
@@ -221,20 +221,11 @@ header {
   color: $colorL;
 }
 
-@media (min-width: 960px) {
-  #embebido {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-@media (max-width: 960px) {
-  #embebido {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    a {
-      text-align: center;
-    }
+.seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #gmap {
+    margin-top: 2rem;
   }
 }
