@@ -6,6 +6,7 @@ import { btnUp } from "./modules/buttonUp.js";
 import { darkMode } from "./modules/darkMode.js";
 import { ModeStorage, setValStorage } from "./modules/storage.js";
 import { embedResp } from "./modules/resposive.js";
+import { tester } from "./modules/responsiveTester.js";
 
 
 const d = document,
@@ -26,13 +27,19 @@ d.addEventListener("DOMContentLoaded", (e)=>{;
     darkMode(".darkBtn");
     ModeStorage(".darkBtn");
     embedResp("youtube", "(min-width: 960px)", desktopVideo, mobileVideo);  
-    embedResp("gmap", "(min-width: 960px)", desktopMap, mobileMap);  
+    embedResp("gmap", "(min-width: 960px)", desktopMap, mobileMap);
+    tester("#openPage", "#closePage", "#urlInput", "#anchoInput", "#altoInput");
 });
 
 d.addEventListener("keydown", (e)=>{
     shortCuts(e);
     moveBall(e, "#bolita", ".tablero"); 
 });
+
+
+
+
+
 
 /*
 ******* mo respiuesta respnsive*******
