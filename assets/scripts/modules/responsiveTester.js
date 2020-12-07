@@ -1,30 +1,30 @@
 const d = document,
 w = window;
-export function tester(openButton, closeButton, urlInp, widthInp, heightInp) {
+
+export function tester(form) {
     let newWindow;
-    const $close = d.querySelector(closeButton),
-    $open = d.querySelector(openButton);
-    d.addEventListener("click", (e)=>{
+    const $form = d.getElementById(form);
 
-        if(e.target.matches(openButton)){
-            let url = d.querySelector(urlInp).value,
-            width = d.querySelector(widthInp).value,
-            height = d.querySelector(heightInp).value;
-            newWindow = w.open(url, "_blank", `width = ${width}, height = ${height}`);
-            $close.disabled = false;
-            $open.disabled = true;
+    d.addEventListener("submit", (e)=>{
+        if(e.target === $form){
+            e.preventDefault();
+            let url = $form.url.value,
+            ancho = $form.ancho.value,
+            alto = $form.alto.value;
+            newWindow = w.open(url, "_blank", `
+            width = ${ancho},
+            height = ${alto}`);
+            $form.opener.disabled = true;
+            $form.closer.disabled = false;
         };
-    
-        if(e.target.matches(closeButton)){
-            newWindow.close();
-            $close.disabled = true;
-            $open.disabled = false;
-        };
-
     });
 
-};
+    d.addEventListener("click", (e)=>{
+        if(e.target===$form.closer){
+            newWindow.close();
+            $form.opener.disabled = false;
+            $form.closer.disabled = true;
+        };
+    });
 
-export function testerClose(params) {
-    
 }

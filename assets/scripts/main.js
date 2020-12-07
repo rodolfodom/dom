@@ -28,7 +28,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{;
     ModeStorage(".darkBtn");
     embedResp("youtube", "(min-width: 960px)", desktopVideo, mobileVideo);  
     embedResp("gmap", "(min-width: 960px)", desktopMap, mobileMap);
-    tester("#openPage", "#closePage", "#urlInput", "#anchoInput", "#altoInput");
+    tester("testerForm");
 });
 
 d.addEventListener("keydown", (e)=>{
