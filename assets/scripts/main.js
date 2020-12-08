@@ -8,6 +8,7 @@ import { ModeStorage, setValStorage } from "./modules/storage.js";
 import { embedResp } from "./modules/resposive.js";
 import { tester } from "./modules/responsiveTester.js";
 import { userAgt } from "./modules/userAgent.js";
+import { red } from "./modules/red.js";
 
 
 const d = document,
@@ -31,6 +32,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{;
     embedResp("gmap", "(min-width: 960px)", desktopMap, mobileMap);
     tester("testerForm");
     userAgt("UserAgent");
+    red("#conection");
 });
 
 d.addEventListener("keydown", (e)=>{
