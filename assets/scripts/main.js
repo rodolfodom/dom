@@ -32,7 +32,6 @@ d.addEventListener("DOMContentLoaded", (e)=>{;
     embedResp("gmap", "(min-width: 960px)", desktopMap, mobileMap);
     tester("testerForm");
     userAgt("UserAgent");
-    red("#conection");
 });
 
 d.addEventListener("keydown", (e)=>{
@@ -40,7 +39,7 @@ d.addEventListener("keydown", (e)=>{
     moveBall(e, "#bolita", ".tablero"); 
 });
 
-
+red("#conection");
 
 
 
