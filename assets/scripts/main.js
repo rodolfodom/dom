@@ -9,6 +9,7 @@ import { embedResp } from "./modules/resposive.js";
 import { tester } from "./modules/responsiveTester.js";
 import { userAgt } from "./modules/userAgent.js";
 import { red } from "./modules/red.js";
+import { videoWebcam } from "./modules/webcam.js";
 
 
 const d = document,
@@ -32,6 +33,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{;
     embedResp("gmap", "(min-width: 960px)", desktopMap, mobileMap);
     tester("testerForm");
     userAgt("UserAgent");
+    videoWebcam("video");
 });
 
 d.addEventListener("keydown", (e)=>{
