@@ -7,6 +7,7 @@ import { darkMode } from "./modules/darkMode.js";
 import { ModeStorage, setValStorage } from "./modules/storage.js";
 import { embedResp } from "./modules/resposive.js";
 import { tester } from "./modules/responsiveTester.js";
+import { userAgt } from "./modules/userAgent.js";
 
 
 const d = document,
@@ -29,6 +30,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{;
     embedResp("youtube", "(min-width: 960px)", desktopVideo, mobileVideo);  
     embedResp("gmap", "(min-width: 960px)", desktopMap, mobileMap);
     tester("testerForm");
+    userAgt("UserAgent");
 });
 
 d.addEventListener("keydown", (e)=>{
