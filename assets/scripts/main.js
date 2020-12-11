@@ -12,6 +12,7 @@ import { red } from "./modules/red.js";
 import { videoWebcam } from "./modules/webcam.js";
 
 
+
 const d = document,
 w = window,
 fechaL = new Date(2020, 11, 5, 20, 11, 0),
