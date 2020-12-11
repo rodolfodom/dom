@@ -10,6 +10,7 @@ import { tester } from "./modules/responsiveTester.js";
 import { userAgt } from "./modules/userAgent.js";
 import { red } from "./modules/red.js";
 import { videoWebcam } from "./modules/webcam.js";
+import { location } from "./modules/location.js";
 
 
 
@@ -35,6 +36,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{;
     tester("testerForm");
     userAgt("UserAgent");
     videoWebcam("video");
+    location("locationInfo");
 });
 
 d.addEventListener("keydown", (e)=>{
