@@ -253,3 +253,12 @@ header {
     margin: 0;
   }
 }
+
+.tarjetas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  figcaption {
+    text-align: center;
+  }
+}

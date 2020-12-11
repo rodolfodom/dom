@@ -11,6 +11,7 @@ import { userAgt } from "./modules/userAgent.js";
 import { red } from "./modules/red.js";
 import { videoWebcam } from "./modules/webcam.js";
 import { location } from "./modules/location.js";
+import { filtro } from "./modules/searchFilter.js";
 
 
 
@@ -37,6 +38,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{;
     userAgt("UserAgent");
     videoWebcam("video");
     location("locationInfo");
+    filtro("#finder");
 });
 
 d.addEventListener("keydown", (e)=>{
@@ -47,16 +49,6 @@ d.addEventListener("keydown", (e)=>{
 red("#conection");
 
 
-
-
-/*
-******* mo respiuesta respnsive*******
-
-w.addEventListener("load", () => {
-    videosRespLoad("#embebido");
-});
-
-w.addEventListener("resize", () => {
-    videosRespLoad("#embebido");
-});
-*/
+let cadena = "ingeniero",
+reg = new RegExp("nier");
+console.log(reg.test(cadena));
