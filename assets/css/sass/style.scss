@@ -172,6 +172,7 @@ header {
 }
 
 .upBtn {
+  z-index: 9999;
   position: fixed;
   bottom: 1rem;
   right: 1rem;
@@ -197,6 +198,7 @@ header {
 }
 
 .darkBtn {
+  z-index: 9999;
   position: fixed;
   bottom: 1rem;
   left: 1rem;
@@ -261,4 +263,57 @@ header {
   figcaption {
     text-align: center;
   }
+}
+
+.slider {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
+.sliderBtn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 900;
+  button {
+    font-size: larger;
+    font-weight: bolder;
+    background-color: #6185db;
+    padding: 1.2rem 1.5rem;
+    border: none;
+    border-radius: 50%;
+    margin: 0 15px;
+    opacity: 0.5;
+    color: white;
+  }
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
 }

@@ -13,6 +13,7 @@ import { videoWebcam } from "./modules/webcam.js";
 import { location } from "./modules/location.js";
 import { filtro } from "./modules/searchFilter.js";
 import { sortear } from "./modules/sorteo.js";
+import { slideChage } from "./modules/slider.js";
 
 
 
@@ -42,6 +43,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{;
     location("locationInfo");
     filtro("#finder");
     sortear("#sorteoBtn", participantes, ".opciones");
+    slideChage();
 });
 
 d.addEventListener("keydown", (e)=>{
