@@ -317,4 +317,56 @@ header h1 {
   visibility: visible;
 }
 
+@media (min-width: 1024px) {
+  .upBtn {
+    right: unset;
+    left: calc(5rem + 15px);
+  }
+
+  .hamburger {
+    visibility: hidden;
+  }
+
+  .menu {
+    transform: unset;
+    top: 120px;
+    right: 0;
+    width: 20vw;
+    display: block;
+    padding: 0;
+    padding-bottom: 3rem;
+    margin: 0;
+    overflow-y: auto;
+  }
+  .menu ul {
+    height: calc(100vh-120px);
+    display: flex;
+    flex-direction: column;
+  }
+  .menu ul li {
+    line-height: 19px;
+    padding: 12px 0;
+  }
+  .menu ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0rem 0.3rem;
+  }
+
+  .contenido {
+    margin-right: 20vw;
+  }
+
+  .menu ul li:hover {
+    background-color: #070769;
+  }
+  .menu ul li:hover a {
+    color: #f3c23b;
+  }
+
+  .itemActive {
+    background-color: #070769;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

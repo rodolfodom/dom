@@ -14,6 +14,8 @@ import { location } from "./modules/location.js";
 import { filtro } from "./modules/searchFilter.js";
 import { sortear } from "./modules/sorteo.js";
 import { slideChage } from "./modules/slider.js";
+import { scrollspy } from "./modules/observer.js";
+
 
 
 
@@ -44,6 +46,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{;
     filtro("#finder");
     sortear("#sorteoBtn", participantes, ".opciones");
     slideChage();
+    scrollspy();
 });
 
 d.addEventListener("keydown", (e)=>{
