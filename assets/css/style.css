@@ -368,5 +368,10 @@ header h1 {
     background-color: #070769;
   }
 }
+.videoContainer {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
