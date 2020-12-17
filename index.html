@@ -62,6 +62,9 @@
             <li>
                 <a href="#seccion13">Formulario de contacto</a>
             </li>
+            <li>
+                <a href="#seccion14">Narrador</a>
+            </li>
         </ul>
     </div>
     <div class="contenido">
@@ -299,6 +302,17 @@
                 <p>Los datos se enviaron con éxito</p>
             </div>
         </section>
+        <section class="seccion" id="seccion14">
+            <h2>Narrador</h2>
+            <select id="voice-select">
+                <option>--elige una voz--</option>
+            </select>
+            <br><br>
+            <textarea id="voice-script" cols="30" rows="10"></textarea>
+            <br><br>
+            <button id="speaker">Leer texto
+            </button>
+        </section>
         <button class="upBtn hidden ">
             <i class="fas fa-arrow-up"></i>
         </button>
@@ -326,6 +340,7 @@
     <script type="module" src="/assets/scripts/modules/slider.js"></script>
     <script type="module" src="/assets/scripts/modules/smartVideo.js"></script>
     <script type="module" src="/assets/scripts/modules/forms.js"></script>
+    <script type="module" src="/assets/scripts/modules/speechSynthesis.js"></script>
 
 
 </body>

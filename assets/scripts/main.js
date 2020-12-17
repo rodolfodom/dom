@@ -17,6 +17,7 @@ import { slideChage } from "./modules/slider.js";
 import { scrollspy } from "./modules/observer.js";
 import { smtVideo } from "./modules/smartVideo.js";
 import { formValidation } from "./modules/forms.js";
+import { speak } from "./modules/speechSynthesis.js";
 
 const d = document,
   w = window,
@@ -61,6 +62,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   scrollspy();
   smtVideo();
   formValidation();
+  speak();
 });
 
 d.addEventListener("keydown", (e) => {
