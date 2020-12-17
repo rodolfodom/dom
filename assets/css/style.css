@@ -374,4 +374,73 @@ header h1 {
   text-align: center;
 }
 
+#contacto {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+#contacto input {
+  margin: 1em 0;
+  height: 2em;
+}
+#contacto input[type=submit] {
+  width: 10%;
+  cursor: pointer;
+}
+#contacto input[type=submit] {
+  border: 1px solid cornflowerblue;
+}
+#contacto textarea {
+  resize: none;
+}
+#contacto legend {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+textarea:valid {
+  border: 2px solid green;
+}
+
+textarea:invalid {
+  border: 2px solid red;
+}
+
+.none {
+  display: none;
+}
+
+.form-error-message {
+  margin-top: -1rem;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  transition: all 800ms ease;
+}
+
+.show {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
