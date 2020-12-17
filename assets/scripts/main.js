@@ -16,6 +16,7 @@ import { sortear } from "./modules/sorteo.js";
 import { slideChage } from "./modules/slider.js";
 import { scrollspy } from "./modules/observer.js";
 import { smtVideo } from "./modules/smartVideo.js";
+import { formValidation } from "./modules/forms.js";
 
 const d = document,
   w = window,
@@ -59,6 +60,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   slideChage();
   scrollspy();
   smtVideo();
+  formValidation();
 });
 
 d.addEventListener("keydown", (e) => {
